@@ -82,7 +82,7 @@ export default Home;
 
 export const loader = async () => {
   const response = await fetch(
-    `${import.meta.env.VITE_BASE_URL}/api/v1/posts`,
+    `https://dalle2-0-78b7.onrender.com/api/v1/posts`,
     {
       method: "GET",
       headers: {

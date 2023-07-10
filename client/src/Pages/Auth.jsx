@@ -22,7 +22,7 @@ export const action = async ({ request }) => {
     password: data.get("password"),
   };
 
-  const response = await fetch(`${import.meta.env.VITE_BASE_URL}/api/v1/${mode}`, {
+  const response = await fetch(`https://dalle2-0-78b7.onrender.com/api/v1/${mode}`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",

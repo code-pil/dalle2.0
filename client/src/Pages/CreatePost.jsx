@@ -25,7 +25,7 @@ const CreatePost = () => {
       const token = getToken();
       try {
         const response = await fetch(
-          `${import.meta.env.VITE_BASE_URL}/api/v1/posts`,
+          `https://dalle2-0-78b7.onrender.com/api/v1/posts`,
           {
             method: "POST",
             headers: {
@@ -63,7 +63,7 @@ const CreatePost = () => {
         setGeneratingImg(true);
         const token = getToken();
         const response = await fetch(
-          `${import.meta.env.VITE_BASE_URL}/api/v1/dalle`,
+          `https://dalle2-0-78b7.onrender.com/api/v1/dalle`,
           {
             method: "POST",
             headers: {
